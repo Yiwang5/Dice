@@ -1,6 +1,6 @@
 void setup()
 {
-  size(500, 600);
+  size(500, 535);
   textAlign(CENTER, CENTER);
   noLoop();
 }
@@ -25,10 +25,11 @@ void draw()
       else if (bob.six == true)
         count = count + 6;
       fill(255);
-      square (200, 500, 100);
+      rect (-1, 500, 501, 60);
       fill(0); 
-      text("count:", 250, 550);
-      text(count, 275, 550);
+      text("count:", 245, 517);
+      text(count, 273, 517);
+      text ("By Yixuan Wang, APCS A, 2024", 400,517);
       bob.show();
     }
   }
@@ -73,7 +74,7 @@ class Die //models one single dice cube
   void show()
   {
     fill(255);
-    square(myX, myY, 100);
+    rect(myX, myY, 100,100);
     fill(0);
     if (one == true) {
       text("1", myX+ 25, myY+ 50);
