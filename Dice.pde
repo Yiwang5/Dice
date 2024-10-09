@@ -109,7 +109,5 @@ class Die //models one single dice cube
       ellipse(myX+20, myY+50, 20, 20);
       ellipse(myX+80, myY+50, 20, 20);
     }
-    //else
-    //text("10",myX,myY);
   }
 }
